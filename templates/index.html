@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <head>
+    <title>Live Video Streaming</title>
+    <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.19.0.min.js"></script>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/video.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </head>
+  <body>
+<div class="bg"></div>
+     <div class="bg-others"> 
+    <div class="container">
+      <h1 >Live Video Streaming over the Internet</h1>
+        <center><hr style="height:2px; border:none; color:#ffffff; background-color:#ffffff; width:35%; margin: 0 auto 0 auto;"></center>
+        <p>by SPARKLERS: We Are The Makers</p>  
+    <img style="border:5px solid black;" src="{{ url_for('video_feed') }}" alt = "No Connection" height= 480px width=640px border="2">
+  </body>
+</html>
+
